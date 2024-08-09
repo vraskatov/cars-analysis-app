@@ -1,0 +1,71 @@
+.card, .card-body, #all-years-button {
+    background-color: black;
+    font-weight: bold;
+    color: #00bc8c !important;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card {
+    font-size: 2rem;
+}
+
+.dropdown-dark .Select-control {
+    background-color: #000000 !important; /* Dark background */
+    color: #00bc8c !important;              /* #00bc8c text */
+}
+
+.dropdown-dark .Select-menu-outer {
+    background-color: #000000 !important; /* Dark background for the dropdown menu */
+    color: #00bc8c !important;              /* #00bc8c text for the dropdown items */
+    border-color: #000000 !important;     /* Dark border */
+}
+
+.dropdown-dark .Select-option {
+    background-color: #000000 !important; /* Dark background for each option */
+    color: #00bc8c !important;              /* #00bc8c text for each option */
+}
+
+.dropdown-dark .Select-option.is-focused {
+    background-color: #3A4750 !important; /* Slightly lighter background for focused option */
+    color: #00bc8c !important;              /* #00bc8c text for focused option */
+}
+
+.dropdown-dark .Select-option.is-selected {
+    background-color: #4B5964 !important; /* Even lighter background for selected option */
+    color: #00bc8c !important;              /* #00bc8c text for selected option */
+}
+
+.dropdown-dark .Select-arrow-zone {
+    background-color: #000000 !important; /* Dark background for the arrow zone */
+}
+
+.dropdown-dark .Select-arrow {
+    border-top-color: #00bc8c !important;  /* #00bc8c arrow */
+}
+
+.dropdown-dark .Select-placeholder {
+    color: #00bc8c !important;              /* #00bc8c placeholder text */
+}
+
+.dropdown-dark .Select-placeholder {
+    color: #00bc8c !important;           /* Light grey placeholder text */
+}
+
+.dropdown-dark .Select-value-label {
+    color: #00bc8c !important;           /* Light grey placeholder text */
+}
+
+
+.dropdown-dark .Select-input > input {
+    color: #00bc8c !important;              /* #00bc8c text for input */
+}
+
+.dropdown-dark .Select-clear-zone {
+    background-color: #000000 !important; /* Dark background for the clear zone */
+}
+
+.dropdown-dark .Select-noresults {
+    background-color: #000000 !important; /* Dark background for no results message */
+    color: #00bc8c !important;              /* #00bc8c text for no results message */
+}
