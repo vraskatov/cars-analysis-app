@@ -1,8 +1,9 @@
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from layout_elements.layout_elements import (cars_sold_card, sales_sum_card, best_model_card,
-                                             best_make_card, all_years_button, year_dropdown,
+                                             best_make_card
                                              )
+from layout_elements.controls import all_years_button, year_dropdown
 from layout_elements.stylings import graph_style
 
 # App Structure:

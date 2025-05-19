@@ -5,24 +5,6 @@ from dash import callback, Output, Input, State, dcc, ctx, html
 import dash_bootstrap_components as dbc
 from .data_basis import all_years, cars_df
 
-# II. Layout Components
-# A: Control Elements
-# ---------------------
-year_dropdown = dcc.Dropdown(
-    all_years,
-    None,
-    id='year-dropdown',
-    placeholder="Select a Specific Year",
-    clearable=True,
-    className='dropdown-dark mb-4',
-)
-
-all_years_button = html.Button(
-    'All Years',
-    id='all-years-button',
-    n_clicks=0,
-    className='mb-4'
-)
 
 
 # B: Cards
