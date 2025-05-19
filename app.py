@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 from layout_elements.layout_elements import (cars_sold_card, sales_sum_card, best_model_card,
                                              best_make_card, all_years_button, year_dropdown,
                                              )
-from layout_elements.graph_style import graph_style
+from layout_elements.stylings import graph_style
 
 # App Structure:
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY,
@@ -14,8 +14,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY,
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(html.H2({},
-                        'title-of-page',
+        dbc.Col(html.H2(id='title-of-page',
                         className='text-center text-success my-4'),
                 width=12)
     ]),

@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import dash
-from .common_graph_layout import common_graph_layout
+from .stylings import common_graph_layout
 from dash import callback, Output, Input, State, dcc, ctx, html
 import dash_bootstrap_components as dbc
 
@@ -39,7 +39,7 @@ all_years_button = html.Button(
 def create_card(header, element_id):
     return dbc.CardBody([
         dbc.CardHeader(header),
-        dbc.Card({}, element_id, className='text-center text-success my-4')
+        dbc.Card(id=element_id, className='text-center text-success my-4')
     ])
 
 
