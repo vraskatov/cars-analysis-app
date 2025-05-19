@@ -1,18 +1,9 @@
-import pandas as pd
 import plotly.express as px
 import dash
 from .stylings import common_graph_layout
 from dash import callback, Output, Input, State, dcc, ctx, html
 import dash_bootstrap_components as dbc
-
-
-# I. Data Foundation:
-# Source of Dataset: https://www.kaggle.com/datasets/ander289386/cars-germany
-# -------------------
-cars_df = pd.read_csv('data/autoscout24_edited.csv')
-cars_records = cars_df.to_dict('records')
-all_years = [year for year
-             in range(cars_df.year.min(), cars_df.year.max() + 1)]
+from .data_basis import all_years, cars_df
 
 # II. Layout Components
 # A: Control Elements
