@@ -6,7 +6,6 @@ import dash_bootstrap_components as dbc
 from .data_basis import all_years, cars_df
 
 
-
 # B: Cards
 # ----------
 def create_card(header, element_id):
@@ -24,8 +23,6 @@ best_make_card = create_card('Bestseller Make', 'best-make')
 
 test_card = create_card('Card for testing', 'test-card')
 
-
-# b) General graphs
 # Todo: Part of interactivity such as zooming in should be deactivated
 # Line plot for sold cars:
 year_counts = cars_df.groupby('year').size()
@@ -56,7 +53,6 @@ sums_over_time.update_xaxes(tickmode='linear',
                             tickangle=-45)
 
 
-
 # III. Callbacks
 
 
@@ -79,8 +75,8 @@ def set_graphs_to_year(year_selected, n_clicks):
 
     # Pie with ratios of offer Types:
     # Task: Control the order of the slices and thereby the legend order
-    offer_types_order = cars_df.groupby('offerType').price.mean()\
-                                                    .sort_values().index
+    offer_types_order = cars_df.groupby('offerType').price.mean() \
+        .sort_values().index
     cmap_offertypes = {
         'Used': '#00bc8c',
         'Demonstration': '#008c69',
@@ -148,7 +144,6 @@ def set_graphs_to_year(year_selected, n_clicks):
         ),
         showlegend=False
     )
-
 
     return offertypes_pie, fuel_count, mileages_bars
 
@@ -257,7 +252,6 @@ def update_title(year_selected, n_clicks):
         return f'Statistics of {year_selected}'
     else:
         return f'Statistics of {all_years[0]}-{all_years[-1]}'
-
 
 # callback and a card that were used for testing:
 # @callback(
