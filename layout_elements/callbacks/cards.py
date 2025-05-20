@@ -52,3 +52,26 @@ def generate_card_values(year_selected=None):
     sum_of_year = f"{sum_of_year / 1e6:,.2f} Mio. €"
 
     return sales_of_year, sum_of_year, model_of_year, make_of_year
+
+# callback and a card that were used for testing:
+# @callback(
+#     Output('test-card', 'children'),
+#     Input('year-dropdown', 'value'),
+#     Input('all-years-button', 'n_clicks'),
+#     State('year-dropdown', 'value')
+# )
+# def test_callback(year_selected, n_clicks, dropdown_value):
+#     triggered_id = ctx.triggered_id
+#
+#     if triggered_id == 'year-dropdown':
+#         if year_selected is not None:
+#             cars_selected = cars_df.query(f'year == {year_selected}')
+#             selected_size = cars_selected.size
+#             return selected_size
+#         else:
+#             return cars_df.size
+#
+#     elif triggered_id == 'all-years-button':
+#         return cars_df.size
+#
+#     return cars_df.size

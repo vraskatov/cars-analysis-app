@@ -2,7 +2,6 @@ from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
 from layout_elements.callbacks import plots, controls
-
 from layout_elements.callbacks.cards import (
     cars_sold_card,
     sales_sum_card,
