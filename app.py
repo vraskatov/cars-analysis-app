@@ -2,7 +2,7 @@ from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
 from layout_elements.callbacks import plots
-from layout_elements.layout_elements import (
+from layout_elements.callbacks.cards import (
     cars_sold_card,
     sales_sum_card,
     best_model_card,
@@ -58,7 +58,6 @@ app.layout = dbc.Container([
     #         dcc.Graph(figure=sums_over_time),
     #         width=12, lg=6),
 ])
-
 
 if __name__ == '__main__':
     app.run(debug=True)
