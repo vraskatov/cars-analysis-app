@@ -1,5 +1,5 @@
 from dash import dcc, html
-from .data_basis import all_years
+from data.data_basis import all_years
 
 year_dropdown = dcc.Dropdown(
     all_years,

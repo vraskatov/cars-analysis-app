@@ -1,5 +1,5 @@
 import plotly.express as px
-from .data_basis import cars_df
+from data.data_basis import cars_df
 from stylings import common_graph_layout
 
 # Todo: Part of interactivity such as zooming in should be deactivated

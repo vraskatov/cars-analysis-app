@@ -1,9 +1,9 @@
 import plotly.express as px
 import dash
 from .stylings import common_graph_layout
-from dash import callback, Output, Input, State, dcc, ctx, html
+from dash import callback, Output, Input, ctx
 import dash_bootstrap_components as dbc
-from .data_basis import all_years, cars_df
+from data.data_basis import all_years, cars_df
 
 
 # B: Cards
@@ -55,7 +55,7 @@ sums_over_time.update_xaxes(tickmode='linear',
 
 # III. Callbacks
 
-
+# Callback that generates three of four plots based on years selected:
 @callback(
     Output('offer-pie', 'figure'),
     Output('fuel-bars', 'figure'),
@@ -147,7 +147,7 @@ def set_graphs_to_year(year_selected, n_clicks):
 
     return offertypes_pie, fuel_count, mileages_bars
 
-
+# Callback to generate 4th plot as line or box depending on year selection
 @callback(
     Output('line_or_box', 'figure'),
     Input('year-dropdown', 'value'),
