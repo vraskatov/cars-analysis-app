@@ -1,7 +1,7 @@
 ## Cars Analysis App
 
-This is an Analysis App written in Python, build with Dash and based on a 
-dataset obtained from Kaggle.
+This is an Analysis App written in Python, built with Dash and based on a 
+cars dataset obtained from Kaggle.
 
 To start the app run app.py.
 
@@ -10,12 +10,11 @@ To start the app run app.py.
 To achieve a responsive behavior dash_bootstrap_components has been used.
 The main goal of the app at this stage is to give the user a dashboard for the
 data with the options of looking globally or by year at the data, visualizing 
-different aspects of it with cards and plots.
+different aspects of the given year with cards and plots.
 
 ### The road ahead:
 
-After some refactoring planned as the next step the single page approach will
-be replaced with a multipage approach. 
+Multipage Approach:
 At this point of time only two pages are planned:
 * global view: the visualized statistics of all years
 with the additional possibility of filtering by year
