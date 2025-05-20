@@ -2,7 +2,7 @@ from dash import Output, Input, ctx, callback
 
 from data.data_basis import cars_df
 import plotly.express as px
-from layout_elements.stylings import common_graph_layout
+from components.layout_stylings import common_graph_layout
 
 
 # Todo: Part of interactivity such as zooming in should be deactivated

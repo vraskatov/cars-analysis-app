@@ -1,6 +1,6 @@
 import plotly.express as px
 from data.data_basis import cars_df
-from stylings import common_graph_layout
+from layout_stylings import common_graph_layout
 
 # Todo: Part of interactivity such as zooming in should be deactivated
 # Line plot for sold cars:

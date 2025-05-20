@@ -1,15 +1,15 @@
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
-from layout_elements.callbacks import plots, controls
-from layout_elements.callbacks.cards import (
+from components.callbacks import callback_plots, callback_controls, callback_titles
+from components.callbacks.callback_cards import (
     cars_sold_card,
     sales_sum_card,
     best_model_card,
     best_make_card
 )
-from layout_elements.controls import all_years_button, year_dropdown
-from layout_elements.stylings import graph_style
+from components.layout_controls import all_years_button, year_dropdown
+from components.layout_stylings import graph_style
 
 # App Structure:
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY,
